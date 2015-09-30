@@ -1,6 +1,7 @@
 var through  = require('through2');
 var split  = require('split');
 var linenumber = 0;
+
 var writeCallback = function(buffer,encoding, next){
 	var result = buffer.toString();
 	if (linenumber % 2 === 0){
